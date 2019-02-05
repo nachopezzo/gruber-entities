@@ -1,3 +1,5 @@
+import {estadoGrua}  from '../src/estadoGrua.js'
+
 export class grua {
   /**
    * Construye una nueva instancia de la clase grua.
@@ -15,5 +17,9 @@ export class grua {
    */
   get caracteristicas() {
     return [];
+  }
+
+  get getEstado(){
+    return estadoGrua.getEstado();
   }
 }
