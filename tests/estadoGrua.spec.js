@@ -1,27 +1,27 @@
 import { expect } from 'chai';
 
-describe('grua', function() {
+describe('estadoGrua', function() {
 
     context('constructor', function() {
 
         it('should have a non null description', function() {
             expect(function() {
-                const sut = new grua(null);
+                const sut = new estadoGrua(null);
             }).to.throw();
         });
 
         it ('should have a non empty description', function() {
             expect(function() {
-                const sut = new grua('');
+                const sut = new estadoGrua('');
             }).to.throw();
         });
 
     });
 
-    context('caracteristicas', function() {
-        it ('should return empty array', function() {
-          const sut = new grua('miGrua');
-          expect(sut.caracteristicas).to.be.an('array').lengthOf(0);
+    context('getEstadoDeGrua', function() {
+        it ('should return empty', function() {
+          const sut = new estadoGrua('Desactivo');
+          //expect(sut.getEstadoDeGrua).to.be.equals(sut.estadoGrua == "" : "Error al obtener el estado d ela grua"?: );
         });
     });
 });

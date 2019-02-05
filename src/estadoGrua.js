@@ -19,11 +19,11 @@ export class estadoGrua{
     /**
      * Devuelve las caracteristicas de la grua.
      */
-    get estadoDeGrua() {
+    get getEstadoDeGrua() {
         return this.estado;
     }
 
-    set estadoDeGrua(nuevoEstado){
+    set setEstadoDeGrua(nuevoEstado){
         this.estado = nuevoEstado;
     }
 }
