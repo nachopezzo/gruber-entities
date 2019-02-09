@@ -1,26 +1,25 @@
-var estado = {
-  ACTIVO: { value: 0, name: "Activo", code: "A" },
-  DESACTIVO: { value: 1, name: "Desactivo", code: "D" }
-};
-
 export class estadoGrua {
-  /*
+  /**
    * Constructor de la Clase Estado de a Grua
+   * @param {string} estado Status de la grua.
    */
   constructor(nuevoEstado) {
     if (!nuevoEstado) {
-      throw new Error("Debe especificar el estado de la grua");
+      throw new Error("Should specify the status of the Grua");
     }
-    this.estado = nuevoEstado.DESACTIVO;
+    this.estado = nuevoEstado;
   }
 
   /**
-   * Devuelve las caracteristicas de la grua.
+   * Return Status of grua.
    */
   get getEstadoDeGrua() {
     return this.estado;
   }
 
+  /**
+   * Set Status of grua.
+   */
   set setEstadoDeGrua(nuevoEstado) {
     this.estado = nuevoEstado;
   }

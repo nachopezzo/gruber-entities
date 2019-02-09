@@ -1,4 +1,4 @@
-import {estadoGrua}  from '../src/estadoGrua.js'
+import { estadoGrua } from "../src/estadoGrua.js";
 
 export class grua {
   /**
@@ -19,7 +19,7 @@ export class grua {
     return [];
   }
 
-  get getEstado(){
+  get getEstado() {
     return estadoGrua.getEstado();
   }
 }
