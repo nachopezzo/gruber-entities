@@ -26,7 +26,7 @@ describe("estadoGrua", function() {
   context("setEstadoGrua", function() {
     it("Can´t set status of the grua", function() {
       const sut = new estadoGrua("Estado");
-      expect(sut.getEstadoDeGrua).to.throw;
+      expect(sut.setEstadoDeGrua).to.throw;
     });
   });
 });
